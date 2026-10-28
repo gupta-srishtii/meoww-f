@@ -1,0 +1,23 @@
+.home-companion-anchor{position:absolute;width:110px;height:110px;right:12%;bottom:94px;pointer-events:none}
+.living-companion.home-floating-companion{position:fixed;left:0;top:0;width:110px;height:110px;z-index:90;isolation:isolate;will-change:transform;transition:opacity .25s;pointer-events:none}
+.home-floating-companion .companion-character{width:110px;height:110px;pointer-events:auto;transition:transform .3s;display:grid;place-items:center;padding:0;border-radius:50%}
+.home-floating-companion .companion-character img{width:100%;filter:drop-shadow(0 12px 15px #0004)}
+.home-floating-companion[data-following=true] .companion-character{pointer-events:none;cursor:default;transform:none}
+.home-floating-companion[data-following=true] .companion-character img{animation:companionFloat 7s ease-in-out infinite}
+.home-floating-companion[data-visible=false]{opacity:0;visibility:hidden;pointer-events:none}
+.home-floating-companion[data-visible=false] .companion-character{pointer-events:none}
+.home-floating-companion::before{width:110px;height:40px;top:85%;background:radial-gradient(ellipse,#160d002a,transparent 70%)}
+.home-floating-companion[data-aura=true]::before{top:-25px;left:-30px;width:170px;height:170px;background:radial-gradient(circle,color-mix(in srgb,var(--world-accent) 32%,transparent),transparent 70%)}
+.companion-home-hint{position:absolute;top:106px;left:50%;transform:translateX(-50%);white-space:nowrap;padding:5px 9px;border-radius:20px;background:var(--theme-panel-bg);color:var(--theme-text-main);border:1px solid var(--hairline);font-size:10px;box-shadow:0 4px 12px #0001;pointer-events:none}
+.home-companion-menu{position:absolute;right:96px;top:-35px;width:218px;padding:16px;display:flex;flex-direction:column;gap:9px;border-radius:20px;border:1px solid var(--hairline-strong);background:var(--theme-panel-bg);color:var(--theme-text-main);box-shadow:var(--shadow-float);pointer-events:auto;animation:modalEnter .2s ease;transform:none}
+.home-companion-menu strong{font-family:var(--font-display);font-size:22px;font-weight:500}.home-companion-menu small{font-size:11px;line-height:1.5;color:var(--theme-text-muted)}
+.home-companion-menu .btn{justify-content:center;min-height:40px;font-size:12px}.home-companion-menu .text-button{justify-content:center;font-size:11px}
+.companion-follow-stop{position:fixed;left:20px;bottom:20px;z-index:120;gap:10px;box-shadow:var(--shadow-float);background:var(--theme-panel-bg)}.companion-follow-stop kbd{font:10px var(--font-body);border:1px solid var(--hairline-strong);border-radius:4px;padding:3px}
+.living-companion[data-paused=true] .companion-character img{animation-play-state:paused}
+[data-companion-motion=still] .living-companion .companion-character img{animation:none!important}
+[data-companion-motion=gentle] .living-companion[data-state=happy] img{animation:companionFloat 4s ease-in-out infinite}
+@media(max-width:700px){.home-companion-anchor{right:24px;bottom:70px}.home-floating-companion,.living-companion.home-floating-companion{width:86px;height:100px}.home-floating-companion .companion-character{width:86px;height:100px}.home-floating-companion::before{width:86px}.companion-home-hint{top:96px;font-size:9px}.home-companion-menu{right:78px;width:200px;top:-60px}.companion-follow-stop{left:12px;bottom:12px}}
+@media(prefers-reduced-motion:reduce){.home-floating-companion,.home-floating-companion .companion-character{transition:none!important}.home-floating-companion .companion-character img{animation:none!important}}
+/* The Home companion remains small and has no persistent toolbar. */
+.home-companion-anchor{width:82px;height:82px;bottom:150px;right:12%}.living-companion.home-floating-companion,.home-floating-companion .companion-character{width:82px;height:82px}.home-floating-companion[data-following=true] .companion-character{pointer-events:auto;cursor:pointer}.home-floating-companion::before{width:82px}.home-floating-companion .companion-character:hover{transform:scale(1.06)}.home-floating-companion .companion-character:active{transform:scale(.94)}
+@media(max-width:700px){.home-companion-anchor{right:30px;bottom:155px}.living-companion.home-floating-companion,.home-floating-companion .companion-character{width:82px;height:82px}}

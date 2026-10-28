@@ -1,0 +1,35 @@
+{
+  "name": "maitri-frontend-v2",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "node --test tests/companion.test.cjs",
+    "test:browser": "node tests/browser-smoke.cjs",
+    "test:entry": "node tests/browser-entry.cjs",
+    "test:settings": "node tests/browser-settings.cjs",
+    "test:worlds": "node tests/browser-worlds.cjs",
+    "test:lead": "node tests/browser-lead.cjs"
+  },
+  "dependencies": {
+    "@react-three/fiber": "^9.8.2",
+    "canvas-confetti": "^1.9.4",
+    "lucide-react": "^0.475.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "three": "^0.186.1",
+    "zustand": "^5.0.3"
+  },
+  "devDependencies": {
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@types/three": "^0.186.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "~5.7.2",
+    "vite": "^6.2.0"
+  }
+}

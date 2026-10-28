@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+ <defs>
+  <linearGradient id="room" x2="1" y2="1"><stop stop-color="#f6f5ee"/><stop offset=".55" stop-color="#dce9e7"/><stop offset="1" stop-color="#acc6c9"/></linearGradient>
+  <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#b4d3dd"/><stop offset=".6" stop-color="#ecf4ee"/><stop offset="1" stop-color="#ffffff"/></linearGradient>
+  <linearGradient id="floor" x2="1" y2="1"><stop stop-color="#f7f5ed"/><stop offset="1" stop-color="#c3d6d4"/></linearGradient>
+  <linearGradient id="glass"><stop stop-color="#ffffff" stop-opacity=".5"/><stop offset="1" stop-color="#ffffff" stop-opacity=".05"/></linearGradient>
+  <radialGradient id="sun"><stop stop-color="#fffef4"/><stop offset=".3" stop-color="#fff9dd" stop-opacity=".8"/><stop offset="1" stop-color="#fff9dd" stop-opacity="0"/></radialGradient>
+ </defs>
+ <path fill="url(#room)" d="M0 0h1600v1000H0z"/>
+ <path fill="#e8efeb" d="M0 0h560v760L0 1000z"/>
+ <path fill="#f6f6ef" d="M650 760V270a290 290 0 0 1 580 0v490z"/>
+ <path fill="url(#sky)" d="M700 760V280a240 240 0 0 1 480 0v480z"/>
+ <circle fill="url(#sun)" cx="1020" cy="235" r="260"/>
+ <path fill="#b0c9bd" opacity=".35" d="M700 660q140-150 290-40t190-90v230H700z"/>
+ <path fill="url(#floor)" d="M0 1000l560-240h1040v240z"/>
+ <path fill="#fffdf0" opacity=".45" d="M760 760h390l-320 240H180z"/>
+ <path fill="url(#glass)" stroke="#fff" stroke-opacity=".5" d="M1270 80h170v750h-170z"/>
+ <path fill="url(#glass)" stroke="#fff" stroke-opacity=".3" d="M1460 0h140v900h-140z"/>
+ <path fill="#c0d1ca" d="M1170 790q0-30 60-30h190q60 0 60 30v35h-310z"/>
+ <path fill="#edf2e9" d="M1170 780q0-25 60-25h190q60 0 60 25v12h-310z"/>
+ <path fill="#94aaa4" opacity=".3" d="M1200 825h15v55h-15zm230 0h15v55h-15z"/>
+ <ellipse fill="#90aaa3" opacity=".15" cx="1320" cy="890" rx="200" ry="20"/>
+ <path fill="#cedbd4" d="M590 715h70l-10 95h-50z"/>
+ <g fill="none" stroke="#9ab7a5" stroke-width="5" stroke-linecap="round"><path d="M625 720V580m0 60q-65-30-50-80m50 120q60-20 50-80"/></g>
+ <g fill="#abc5b2"><ellipse cx="624" cy="576" rx="12" ry="35"/><ellipse cx="581" cy="586" rx="13" ry="34" transform="rotate(-35 581 586)"/><ellipse cx="663" cy="620" rx="13" ry="35" transform="rotate(35 663 620)"/></g>
+</svg>
